@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KYAM - 한국 젊은 천문학자 모임</title>
+  <meta name="description" content="KYAM(Korean Young Astronomers Meeting) - 한국 젊은 천문학자 모임에 가입해보세요!">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-body">
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo-hpimage.png" alt="KYAM">
+        KYAM
+      </a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="메뉴">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li>
+          <a href="about.html">About</a>
+          <div class="dropdown-menu">
+            <a href="about.html">인사말</a>
+            <a href="history.html">연혁</a>
+            <a href="officers.html">역대 임원진</a>
+          </div>
+        </li>
+        <li>
+          <a href="activities.html">Activity</a>
+          <div class="dropdown-menu">
+            <a href="activities.html">YAM 주요 활동</a>
+            <a href="webzine.html">웹진: 하늘사랑</a>
+            <a href="gallery.html">사진첩</a>
+          </div>
+        </li>
+        <li>
+          <a href="join.html">Contact</a>
+          <div class="dropdown-menu">
+            <a href="join.html">YAM 가입하기</a>
+            <a href="contact.html">문의/건의함</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-slideshow">
+      <img src="images/20190412-131159-hdr_orig.jpg" alt="KYAM" class="active">
+      <img src="images/1_5_orig.jpg" alt="KYAM">
+      <img src="images/2_orig.jpg" alt="KYAM">
+      <img src="images/3_3_orig.jpg" alt="KYAM">
+      <img src="images/4_3_orig.jpg" alt="KYAM">
+      <img src="images/5_6_orig.jpg" alt="KYAM">
+    </div>
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>한국 젊은 천문학자 모임</h1>
+        <p>Korean Young Astronomers Meeting</p>
+        <a href="join.html" class="btn btn-white">가입하기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About preview -->
+  <section class="section">
+    <div class="container">
+      <h2>KYAM에 오신 것을 환영합니다</h2>
+      <p>한국 젊은 천문학자 모임(KYAM)은 1991년에 창립되어, 국내 천문학을 전공하는 대학원생들의 교류와 친목을 도모하기 위해 활동하고 있습니다. 워크샵, 정기총회, 콜로퀴움 등 다양한 활동을 통해 젊은 천문학자들이 함께 성장할 수 있는 커뮤니티를 만들어가고 있습니다.</p>
+      <div class="card-grid" style="margin-top:32px;">
+        <a href="activities.html" class="card" style="text-decoration:none;">
+          <h3>주요 활동</h3>
+          <p>워크샵, 정기총회, 얌마당 콜로퀴움 등 YAM의 다양한 활동을 소개합니다.</p>
+        </a>
+        <a href="webzine.html" class="card" style="text-decoration:none;">
+          <h3>하늘사랑 웹진</h3>
+          <p>1993년부터 이어온 천문학 대학원생 소식지, 하늘사랑을 만나보세요.</p>
+        </a>
+        <a href="join.html" class="card" style="text-decoration:none;">
+          <h3>가입 안내</h3>
+          <p>YAM은 365일 신입회원을 모집하고 있습니다. 지금 가입해보세요!</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-alt" style="text-align:center;">
+    <div class="container">
+      <h2>한국 젊은 천문학자 모임에 가입해보세요!</h2>
+      <p style="margin-bottom:24px;">다양한 학교의 천문학 학생들과 교류하고, 연구 팁을 공유하며, 함께 성장하세요.</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNYjKXGu8ZZjzQmGUp8Vdmjf46hGpZDUCGyqfbkh4JTYvV6A/viewform?usp=header" target="_blank" class="btn">입회원서 작성하러 가기</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">KYAM</span>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="activities.html">Activity</a></li>
+        <li><a href="join.html">가입하기</a></li>
+        <li><a href="contact.html">문의</a></li>
+      </ul>
+      <span style="font-size:0.8rem;">&copy; KYAM - 한국 젊은 천문학자 모임</span>
+    </div>
+  </footer>
+
+  <script>
+    // Slideshow
+    const slides = document.querySelectorAll('.hero-slideshow img');
+    let current = 0;
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 4000);
+  </script>
+
+</body>
+</html>
