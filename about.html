@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>인사말 - KYAM</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-body">
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo-hpimage.png" alt="KYAM">
+        KYAM
+      </a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="메뉴">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="about.html" class="active">About</a>
+          <div class="dropdown-menu">
+            <a href="about.html">인사말</a>
+            <a href="history.html">연혁</a>
+            <a href="officers.html">역대 임원진</a>
+          </div>
+        </li>
+        <li>
+          <a href="activities.html">Activity</a>
+          <div class="dropdown-menu">
+            <a href="events2026.html">2026 활동 안내</a>
+            <a href="activities.html">YAM 주요 활동</a>
+            <a href="webzine.html">웹진: 하늘사랑</a>
+            <a href="gallery.html">사진첩</a>
+          </div>
+        </li>
+        <li>
+          <a href="join.html">Contact</a>
+          <div class="dropdown-menu">
+            <a href="join.html">YAM 가입하기</a>
+            <a href="contact.html">문의/건의함</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>인사말</h1>
+      <p>YAM의 시작과 뜻을 전합니다</p>
+    </div>
+  </div>
+
+  <style>
+    .greeting-card {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 40px;
+      align-items: start;
+      margin-bottom: 56px;
+    }
+    .greeting-card .profile-photo {
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: 14px;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .greeting-card .profile-photo svg {
+      width: 40%;
+      height: 40%;
+      color: var(--border);
+    }
+    .greeting-card .greeting-text {
+      padding-top: 8px;
+    }
+    .greeting-card .greeting-text h3 {
+      margin-bottom: 4px;
+      font-size: 1.3rem;
+    }
+    .greeting-card .greeting-text .role {
+      font-size: 0.95rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .greeting-card .greeting-text p {
+      line-height: 1.8;
+      color: var(--text-light);
+      font-size: 0.98rem;
+    }
+    @media (max-width: 600px) {
+      .greeting-card { grid-template-columns: 1fr; }
+      .greeting-card .profile-photo { max-width: 200px; margin: 0 auto; }
+      .greeting-card .greeting-text { text-align: center; }
+    }
+    .committee-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 20px;
+      margin-top: 24px;
+    }
+    .committee-member {
+      text-align: center;
+    }
+    .committee-member .profile-photo-sm {
+      width: 88px;
+      height: 88px;
+      border-radius: 10px;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 8px;
+      overflow: hidden;
+    }
+    .committee-member .profile-photo-sm svg {
+      width: 36px;
+      height: 36px;
+      color: var(--border);
+    }
+    .committee-member .name {
+      font-weight: 600;
+      font-size: 0.92rem;
+    }
+    .committee-member .affil {
+      font-size: 0.78rem;
+      color: var(--text-light);
+    }
+  </style>
+
+  <!-- 회장 인사말 -->
+  <section class="section">
+    <div class="container" style="max-width:800px;">
+      <div class="greeting-card">
+        <div class="profile-photo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/>
+          </svg>
+        </div>
+        <div class="greeting-text">
+          <div class="role">25대 회장</div>
+          <h3>박종인 <small style="font-weight:400; color:var(--text-light);">서울대학교</small></h3>
+          <p>안녕하세요, 25대 KYAM 회장을 맡게 된 박종인입니다. 천문학을 사랑하는 젊은 연구자들이 서로 배우고, 교류하며, 함께 성장할 수 있는 모임을 만들어가겠습니다. 다양한 활동과 행사를 통해 회원 여러분께 의미 있는 경험을 드릴 수 있도록 최선을 다하겠습니다. 많은 관심과 참여 부탁드립니다!</p>
+        </div>
+      </div>
+
+      <div class="greeting-card">
+        <div class="profile-photo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/>
+          </svg>
+        </div>
+        <div class="greeting-text">
+          <div class="role">부회장</div>
+          <h3>김대현 <small style="font-weight:400; color:var(--text-light);">세종대학교</small></h3>
+          <p>안녕하세요, 부회장 김대현입니다. 회장님과 운영위원들과 함께 회원 여러분이 편하게 소통하고 즐겁게 참여할 수 있는 KYAM을 만들어가겠습니다. 워크샵, 총회, 친목 활동 등 알찬 한 해가 될 수 있도록 열심히 준비하겠습니다. 언제든 편하게 연락주세요!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 운영위원회 -->
+  <section class="section section-alt">
+    <div class="container" style="max-width:800px;">
+      <h2 style="margin-bottom:8px;">운영위원회</h2>
+      <p style="color:var(--text-light); margin-bottom:16px;">25대 KYAM과 함께하는 운영위원들을 소개합니다.</p>
+      <div class="committee-grid">
+        <div class="committee-member">
+          <div class="profile-photo-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg></div>
+          <div class="name">임진</div><div class="affil">UST</div>
+        </div>
+        <div class="committee-member">
+          <div class="profile-photo-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg></div>
+          <div class="name">장지원</div><div class="affil">KAIST</div>
+        </div>
+        <div class="committee-member">
+          <div class="profile-photo-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg></div>
+          <div class="name">이승준</div><div class="affil">케임브리지</div>
+        </div>
+        <div class="committee-member">
+          <div class="profile-photo-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg></div>
+          <div class="name">김태건</div><div class="affil">연세대</div>
+        </div>
+        <div class="committee-member">
+          <div class="profile-photo-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg></div>
+          <div class="name">임서윤</div><div class="affil">공군 우주기상대</div>
+        </div>
+        <div class="committee-member">
+          <div class="profile-photo-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg></div>
+          <div class="name">류민규</div><div class="affil">UNIST</div>
+        </div>
+        <div class="committee-member">
+          <div class="profile-photo-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg></div>
+          <div class="name">차하경</div><div class="affil">UNIST</div>
+        </div>
+        <div class="committee-member">
+          <div class="profile-photo-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg></div>
+          <div class="name">김태완</div><div class="affil">서울대</div>
+        </div>
+        <div class="committee-member">
+          <div class="profile-photo-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg></div>
+          <div class="name">노진영</div><div class="affil">서울대</div>
+        </div>
+        <div class="committee-member">
+          <div class="profile-photo-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg></div>
+          <div class="name">배장호</div><div class="affil">서울대</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width:640px; text-align:center;">
+      <div class="img-frame">
+        <img src="images/1929463433_orig.jpg" alt="1993년 YAM News Letter 1호 서문" style="width:100%; border-radius:8px;">
+      </div>
+      <p style="font-size:0.82rem; color:var(--text-light); margin-top:10px;">
+        — 1993년 YAM News Letter 1호 서문 발췌
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">KYAM</span>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="activities.html">Activity</a></li>
+        <li><a href="join.html">가입하기</a></li>
+        <li><a href="contact.html">문의</a></li>
+      </ul>
+      <span style="font-size:0.8rem;">&copy; KYAM - 한국 젊은 천문학자 모임</span>
+    </div>
+  </footer>
+
+</body>
+</html>

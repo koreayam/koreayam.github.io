@@ -1,0 +1,9 @@
+{
+  "name": "kyam-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "KYAM - 한국 젊은 천문학자 모임 웹사이트",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}
