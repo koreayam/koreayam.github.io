@@ -256,6 +256,31 @@ img {
   font-size: 1rem;
 }
 
+/* ===== Affiliation Banner ===== */
+.affiliation-banner {
+  background: var(--accent-light);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+}
+
+.affiliation-banner p {
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--primary);
+  line-height: 1.6;
+}
+
+.affiliation-banner a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.affiliation-banner a:hover {
+  color: var(--accent);
+}
+
 /* ===== Sections ===== */
 .section {
   padding: 64px 0;
