@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KYAM - Korean Young Astronomers Meeting</title>
+  <meta name="description" content="KYAM (Korean Young Astronomers Meeting) - join the community of young astronomers in Korea!">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="page-body">
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="../images/logo/logo.png" alt="KYAM">
+        KYAM
+      </a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li>
+          <a href="about.html">About</a>
+          <div class="dropdown-menu">
+            <a href="about.html">Message</a>
+            <a href="history.html">History</a>
+            <a href="officers.html">Past Officers</a>
+          </div>
+        </li>
+        <li>
+          <a href="activities.html">Activity</a>
+          <div class="dropdown-menu">
+            <a href="events2026.html">2026 Events</a>
+            <a href="activities.html">YAM Activities</a>
+            <a href="webzine.html">Webzine: Haneul Sarang</a>
+            <a href="gallery.html">Gallery</a>
+          </div>
+        </li>
+        <li>
+          <a href="join.html">Contact</a>
+          <div class="dropdown-menu">
+            <a href="join.html">Join YAM</a>
+            <a href="contact.html">Contact / Feedback</a>
+          </div>
+        </li>
+        <li class="lang-toggle">
+          <span class="lang-active" aria-current="true">EN</span>
+          <span class="lang-sep">|</span>
+          <a href="../index.html" class="lang-link" hreflang="ko" aria-label="한국어">KO</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-slideshow">
+      <img src="../images/hero/slide-1-main.jpg" alt="KYAM" class="active">
+      <img src="../images/hero/slide-2.jpg" alt="KYAM">
+      <img src="../images/hero/slide-3.jpg" alt="KYAM">
+      <img src="../images/hero/slide-4.jpg" alt="KYAM">
+      <img src="../images/hero/slide-5.jpg" alt="KYAM">
+      <img src="../images/hero/slide-6.jpg" alt="KYAM">
+    </div>
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Korean Young Astronomers Meeting</h1>
+        <p>한국 젊은 천문학자 모임</p>
+        <a href="join.html" class="btn btn-white">Join Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About preview -->
+  <section class="section">
+    <div class="container">
+      <h2>Welcome to KYAM</h2>
+      <p>The Korean Young Astronomers Meeting (KYAM) was founded in 1991 to foster exchange and fellowship among graduate students in astronomy in Korea. KYAM is now an <a href="https://www.kas.org/html/sub2_03_6.html" target="_blank" rel="noopener">official division of the Korean Astronomical Society (KAS)</a>, and through workshops, the annual general meeting, and the YAM Colloquium, we are building a community in which young astronomers grow together. KYAM also represents Korea at international gatherings of early-career astronomers such as <a href="https://www.eacoa.net/eayam.php" target="_blank" rel="noopener">EAYAM (East Asian Young Astronomers Meeting)</a>.</p>
+      <div class="card-grid" style="margin-top:32px;">
+        <a href="activities.html" class="card" style="text-decoration:none;">
+          <h3>YAM Activities</h3>
+          <p>Workshops, the general meeting, and YAM Colloquia — see what we do.</p>
+        </a>
+        <a href="webzine.html" class="card" style="text-decoration:none;">
+          <h3>Haneul Sarang Webzine</h3>
+          <p>The astronomy graduate-student newsletter that has continued since 1993.</p>
+        </a>
+        <a href="events2026.html" class="card" style="text-decoration:none;">
+          <h3>2026 Events</h3>
+          <p>Schedule and records of the 25th KYAM executive team's events.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-alt" style="text-align:center;">
+    <div class="container">
+      <h2>Join the Korean Young Astronomers Meeting!</h2>
+      <p style="margin-bottom:24px;">Connect with astronomy students from across Korea, share research tips, and grow together.</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNYjKXGu8ZZjzQmGUp8Vdmjf46hGpZDUCGyqfbkh4JTYvV6A/viewform?usp=header" target="_blank" class="btn">Fill out the membership form</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">KYAM</span>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="activities.html">Activity</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <span style="font-size:0.8rem;">&copy; KYAM - Korean Young Astronomers Meeting</span>
+    </div>
+  </footer>
+
+  <script>
+    // Slideshow
+    const slides = document.querySelectorAll('.hero-slideshow img');
+    let current = 0;
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 4000);
+  </script>
+
+</body>
+</html>

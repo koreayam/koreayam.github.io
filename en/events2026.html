@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026 Events - KYAM</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .event-card {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
+    .event-card-header {
+      padding: 28px 32px;
+    }
+    .event-card-header .event-date {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .event-card-header h3 {
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+    .event-card-header .event-badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+    .event-card-header p {
+      line-height: 1.75;
+      color: var(--text-light);
+    }
+    .event-photos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px;
+    }
+    .event-photos img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+    .talk-info {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin-top: 16px;
+    }
+    .talk-info .speaker-name {
+      font-weight: 600;
+      color: var(--primary);
+      font-size: 1rem;
+      margin-bottom: 6px;
+    }
+    .talk-info .talk-title {
+      font-style: italic;
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+    .talk-info .abstract {
+      font-size: 0.92rem;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+    @media (max-width: 600px) {
+      .event-photos { grid-template-columns: 1fr; }
+      .event-photos img { height: 220px; }
+      .event-card-header { padding: 20px; }
+    }
+  </style>
+</head>
+<body class="page-body">
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="../images/logo/logo.png" alt="KYAM">
+        KYAM
+      </a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="about.html">About</a>
+          <div class="dropdown-menu">
+            <a href="about.html">Message</a>
+            <a href="history.html">History</a>
+            <a href="officers.html">Past Officers</a>
+          </div>
+        </li>
+        <li>
+          <a href="activities.html" class="active">Activity</a>
+          <div class="dropdown-menu">
+            <a href="events2026.html">2026 Events</a>
+            <a href="activities.html">YAM Activities</a>
+            <a href="webzine.html">Webzine: Haneul Sarang</a>
+            <a href="gallery.html">Gallery</a>
+          </div>
+        </li>
+        <li>
+          <a href="join.html">Contact</a>
+          <div class="dropdown-menu">
+            <a href="join.html">Join YAM</a>
+            <a href="contact.html">Contact / Feedback</a>
+          </div>
+        </li>
+        <li class="lang-toggle">
+          <span class="lang-active" aria-current="true">EN</span>
+          <span class="lang-sep">|</span>
+          <a href="../events2026.html" class="lang-link" hreflang="ko" aria-label="한국어">KO</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>2026 Events</h1>
+      <p>Schedule and records of the 25th KYAM executive team</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container" style="max-width:860px;">
+
+      <!-- 2nd YAM Colloquium 2026 -->
+      <div class="event-card">
+        <div class="event-photos">
+          <img src="../images/events/2026-yam-madang-2/KYAM_얌마당_2차_사진.png" alt="2nd YAM Colloquium 2026 group photo">
+          <img src="../images/events/2026-yam-madang-2/KYAM_2차_최대39명.png" alt="2nd YAM Colloquium 2026 — peak attendance 39">
+        </div>
+        <div class="event-card-header">
+          <div class="event-date">May 18, 2026 (Mon) · Online (Zoom)</div>
+          <h3>2nd YAM Colloquium 2026</h3>
+          <span class="event-badge">39 attendees</span>
+          <p>The second YAM Colloquium of 2026 was held online. We invited Dr. Suhyun Shin, the 2021 YAM president, who walked the path from astronomy into industry, to share an honest account of life after leaving academia. With 39 members attending, this became the most attended YAM Colloquium to date, and lively Q&amp;A about industry careers followed.</p>
+
+          <div class="talk-info">
+            <div class="speaker-name">Dr. Suhyun Shin <small style="font-weight:400; color:var(--text-light);">— 2021 YAM President · Data Scientist, Samsung Electronics AI Center</small></div>
+            <div class="talk-title">"An Honest Story of Leaving Astronomy"</div>
+            <div class="abstract">
+              <strong>"Leaving astronomy"</strong> is something many astronomy students consider at least once. Based on the speaker's experience, this talk shares the trigger for leaving astronomy, the efforts made to transition, and the pros and cons of life after the move. Looking back at student days, there was very little available information on this path, which made it feel quite vague. While this talk doesn't represent every case, it is offered in the hope that it will help YAM members, even in a small way, as they navigate their own career decisions.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1st YAM Colloquium 2026 -->
+      <div class="event-card">
+        <div style="background:#000; display:flex; justify-content:center; align-items:center;">
+          <img src="../images/events/2026-yam-madang-1/group.png" alt="1st YAM Colloquium 2026 group photo" style="max-width:520px; width:100%; height:280px; object-fit:contain; display:block;">
+        </div>
+        <div class="event-card-header">
+          <div class="event-date">May 11, 2026 · Online (Zoom)</div>
+          <h3>1st YAM Colloquium 2026</h3>
+          <span class="event-badge">26 attendees</span>
+          <p>The first YAM Colloquium of 2026 was held online. We invited Dr. Sunho Jin from the Korea Astronomy and Space Science Institute (KASI), who shared his journey in developing polarimetric observing instruments and offered tips and experiences on the astronomer job search. 26 members attended and engaged in active Q&amp;A.</p>
+
+          <div class="talk-info">
+            <div class="speaker-name">Dr. Sunho Jin <small style="font-weight:400; color:var(--text-light);">— Korea Astronomy and Space Science Institute (KASI)</small></div>
+            <div class="talk-title">"My Journey in Instrumentation — From TRIPOL to SQUIDPOL"</div>
+            <div class="abstract">
+              The development and progress of observational instruments hold an important place in the history of astronomy. In particular, polarimetric instruments — which can probe the scattering properties of light — provide new information about celestial objects beyond spectroscopy and photometry. The talk covered the speaker's various polarimeter projects, including <strong>TRIPOL</strong> attached to the former SNU 60 cm telescope, <strong>M-TRIPOL</strong> on the Bohyunsan 1.8 m telescope, and <strong>SQUIDPOL</strong> developed jointly with Dr. Juyeon Kim. He also shared experiences relevant to the job search for fellow young astronomers.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2026 KAS Spring Meeting -->
+      <div class="event-card">
+        <div class="event-photos">
+          <img src="../images/events/2026-kas-spring/group.jpeg" alt="2026 KAS Spring Meeting group photo">
+          <img src="../images/events/2026-kas-spring/gathering.jpeg" alt="2026 KAS Spring Meeting after-party">
+        </div>
+        <div class="event-card-header">
+          <div class="event-date">April 9, 2026</div>
+          <h3>2026 KAS Spring Meeting — KYAM Division Session</h3>
+          <span class="event-badge">34 attendees</span>
+          <p>The KYAM division session was held at the 2026 KAS Spring Meeting. 34 young astronomers attended for the introduction of the 25th executive team, an overview of planned activities, and time for members to connect. The session concluded with a successful after-party.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Upcoming events -->
+  <section class="section section-alt">
+    <div class="container" style="max-width:860px;">
+      <h2 style="margin-bottom:24px;">Upcoming</h2>
+
+      <div class="event-card" style="border-style:dashed; background:var(--bg);">
+        <div class="event-card-header">
+          <div class="event-date">Late 2026</div>
+          <h3>2026 KAS Fall Meeting — General Meeting</h3>
+          <span class="event-badge" style="background:var(--primary-light);">Upcoming</span>
+          <p>The KYAM General Meeting will be held at the 2026 KAS Fall Meeting. The session will cover second-half activity reports, member networking, and discussion of the next executive team. We will update once the date is confirmed.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">KYAM</span>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="activities.html">Activity</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <span style="font-size:0.8rem;">&copy; KYAM - Korean Young Astronomers Meeting</span>
+    </div>
+  </footer>
+
+</body>
+</html>
