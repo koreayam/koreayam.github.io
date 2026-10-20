@@ -468,6 +468,26 @@ tbody tr:hover {
   background: var(--accent-light);
 }
 
+/* Officers table: keep names on one line, give the rest to the committee column */
+.officers-table {
+  word-break: keep-all;
+}
+
+.officers-table td:nth-child(1),
+.officers-table td:nth-child(2),
+.officers-table td:nth-child(3) {
+  white-space: nowrap;
+}
+
+.officers-table td:nth-child(4) {
+  min-width: 320px;
+}
+
+/* English alumni notes are long; let them wrap under the name */
+.officers-table:lang(en) small {
+  white-space: normal;
+}
+
 /* ===== Activity item ===== */
 .activity-item {
   margin-bottom: 48px;
